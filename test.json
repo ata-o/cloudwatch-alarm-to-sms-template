@@ -1,0 +1,21 @@
+{
+    "Records": [
+      {
+        "EventSource": "aws:sns",
+        "EventVersion": "1.0",
+        "EventSubscriptionArn": "arn:aws:sns:******:***************:cloudwatch-alarm-to-sms-template:***************",
+        "Sns": {
+          "Type": "Notification",
+          "MessageId": "EXAMPLE-UUID-***-***",
+          "TopicArn": "arn:aws:sns:******:***************:lambda_to_sms_template",
+          "Subject": "ALARM: \"JOB FAILED\" in EU (Frankfurt)",
+          "Message": "{\"AlarmName\":\"JOB FAILED\",\"AlarmDescription\":null,\"AWSAccountId\":\"***************\",\"AlarmConfigurationUpdatedTimestamp\":\"2001-08-25T11:01:40.230+0000\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 out of the last 1 datapoints [1.0 (25/08/01 10:58:00)] was greater than the threshold (0.0) (minimum 1 datapoint for OK -> ALARM transition).\",\"StateChangeTime\":\"2001-08-25T11:03:30.262+0000\",\"Region\":\"EU (Frankfurt)\",\"AlarmArn\":\"arn:aws:cloudwatch:******:***************:alarm:JOB FAILED\",\"OldStateValue\":\"INSUFFICIENT_DATA\",\"OKActions\":[],\"AlarmActions\":[\"arn:aws:sns:******:***************:lambda_to_sms_template\"],\"InsufficientDataActions\":[],\"Trigger\":{\"Period\":300,\"EvaluationPeriods\":1,\"DatapointsToAlarm\":1,\"ComparisonOperator\":\"GreaterThanThreshold\",\"Threshold\":0.0,\"TreatMissingData\":\"missing\",\"EvaluateLowSampleCountPercentile\":\"\",\"Metrics\":[{\"Expression\":\"SUM(METRICS())\",\"Id\":\"e1\",\"Label\":\"AnyUnsuccessful\",\"ReturnData\":true},{\"Id\":\"m1\",\"MetricStat\":{\"Metric\":{\"Dimensions\":[{\"value\":\"arn:aws:states:******:***************:stateMachine:******\",\"name\":\"StateMachineArn\"}],\"MetricName\":\"ExecutionsTimedOut\",\"Namespace\":\"AWS/States\"},\"Period\":300,\"Stat\":\"Sum\"},\"ReturnData\":false},{\"Id\":\"m2\",\"MetricStat\":{\"Metric\":{\"Dimensions\":[{\"value\":\"arn:aws:states:******:***************:stateMachine:******\",\"name\":\"StateMachineArn\"}],\"MetricName\":\"ExecutionsAborted\",\"Namespace\":\"AWS/States\"},\"Period\":300,\"Stat\":\"Sum\"},\"ReturnData\":false},{\"Id\":\"m3\",\"MetricStat\":{\"Metric\":{\"Dimensions\":[{\"value\":\"arn:aws:states:******:***************:stateMachine:******\",\"name\":\"StateMachineArn\"}],\"MetricName\":\"ExecutionsFailed\",\"Namespace\":\"AWS/States\"},\"Period\":300,\"Stat\":\"Sum\"},\"ReturnData\":false},{\"Id\":\"m4\",\"MetricStat\":{\"Metric\":{\"Dimensions\":[{\"value\":\"arn:aws:states:******:***************:stateMachine:******\",\"name\":\"StateMachineArn\"}],\"MetricName\":\"ExecutionThrottled\",\"Namespace\":\"AWS/States\"},\"Period\":300,\"Stat\":\"Sum\"},\"ReturnData\":false}]}}",
+          "Timestamp": "2001-08-25T11:03:30.336Z",
+          "SignatureVersion": "1",
+          "Signature": "***********************************",
+          "SigningCertURL": "https://sns.******.amazonaws.com/",
+          "UnsubscribeURL": "https://sns.******.amazonaws.com/"
+        }
+      }
+    ]
+  }
